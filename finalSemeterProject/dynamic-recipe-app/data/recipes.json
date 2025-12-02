@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "name": "Pancakes",
+    "image": "https://picsum.photos/150",
+    "servings": 4,
+    "time": "20 min",
+    "difficulty": "Easy",
+    "ingredients": [
+      { "quantity": 2, "unit": "cups", "item": "Flour" },
+      { "quantity": 1, "unit": "cup", "item": "Milk" },
+      { "quantity": 2, "unit": "", "item": "Eggs" }
+    ],
+    "instructions": [
+      "Mix ingredients together.",
+      "Cook on skillet until golden.",
+      "Serve warm with syrup."
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Crockpot Chili",
+    "image": "https://placehold.co/150x150?text=No+Image",
+    "servings": 6,
+    "time": "6 hrs (25 min prep)",
+    "difficulty": "Medium",
+    "ingredients": [
+      { "quantity": 2, "unit": "tbsp", "item": "Cooking oil" },
+      { "quantity": 1, "unit": "cup", "item": "Onion" },
+      { "quantity": 1, "unit": "cup", "item": "Chopped peppers" },
+      { "quantity": 4, "unit": "tbsp", "item": "Chili powder" },
+      { "quantity": 1, "unit": "tsp", "item": "Hot chili powder (optional)" },
+      { "quantity": 1, "unit": "lb", "item": "Ground beef or chicken" },
+      { "quantity": 2, "unit": "cans", "item": "Red Beans" },
+      { "quantity": 2, "unit": "cans", "item": "Kidney Beans" },
+      { "quantity": 2, "unit": "cans", "item": "Tomato Puree" },
+      { "quantity": 2, "unit": "cans", "item": "Tomato Sauce" },
+      { "quantity": 1, "unit": "cup", "item": "Shredded cheese (optional)" },
+      { "quantity": 0.5, "unit": "cup", "item": "Sour cream (optional)" }
+    ],
+    "instructions": [
+      "Heat cooking oil in a 2 quart skillet.",
+      "Saute onions and peppers for 5 minutes.",
+      "Add spices and stir for 30 seconds.",
+      "Add meat and cook until browned (about 15 minutes).",
+      "Pour contents of skillet into 3 quart crockpot.",
+      "Rinse beans and add to crockpot.",
+      "Add tomato puree and tomato sauce.",
+      "Cover and cook on low for 6 hours.",
+      "Serve in bowls and top with sour cream and cheese."
+    ]
+  }
+]

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add New Recipe</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/addRecipe.js" defer></script>
+</head>
+<body>
+
+  <header class="app-header">
+    <h1>➕ Add New Recipe</h1>
+    <a href="index.html" class="btn">🏠 Back to Home</a>
+  </header>
+
+  <main class="container">
+
+    <form id="recipeForm" class="form-box">
+
+      <!-- Recipe Name -->
+      <label for="name">Recipe Name:</label>
+      <input type="text" id="name" placeholder="e.g., Pancakes" required>
+
+      <!-- Image URL -->
+      <label for="image">Image URL (optional):</label>
+      <input type="url" id="image" placeholder="https://example.com/photo.jpg">
+
+      <!-- File Upload -->
+      <label for="imageFile">Upload Image (optional):</label>
+      <input type="file" id="imageFile" accept="image/*">
+
+      <!-- Servings -->
+      <label for="servings">Servings:</label>
+      <input type="number" id="servings" min="1" value="1" required>
+
+      <!-- Prep Time -->
+      <label for="prepTime">Preparation Time</label>
+      <input type="text" id="prepTime" placeholder="e.g., 25 minutes" required>
+
+      <!-- Cook Time -->
+      <label for="cookTime">Cooking Time</label>
+      <input type="text" id="cookTime" placeholder="e.g., 6 hours" required>
+
+      <!-- Difficulty -->
+      <label for="difficulty">Difficulty:</label>
+      <select id="difficulty" required>
+        <option value="">Select difficulty</option>
+        <option>Easy</option>
+        <option>Medium</option>
+        <option>Hard</option>
+      </select>
+
+      <!-- Ingredient Section -->
+      <h3>Ingredients</h3>
+      <div id="ingredients" class="dynamic-list"></div>
+      <button type="button" id="addIngredient" class="btn small">➕ Add Ingredient</button>
+
+      <!-- Instruction Section -->
+      <h3>Instructions</h3>
+      <div id="instructions" class="dynamic-list"></div>
+      <button type="button" id="addInstruction" class="btn small">➕ Add Step</button>
+
+      <!-- Error -->
+      <div id="error" class="error"></div>
+
+      <!-- Submit -->
+      <button type="submit" class="btn save-btn">💾 Save Recipe</button>
+    </form>
+  </main>
+
+<footer>
+    <footer class="footer">
+  <p>© 2025 Ezekiel Hne Wah. All rights reserved.</p>
+</footer>
+</body>
+</html>
