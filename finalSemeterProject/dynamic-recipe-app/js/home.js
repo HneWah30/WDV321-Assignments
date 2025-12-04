@@ -113,6 +113,9 @@ document.addEventListener("DOMContentLoaded", () => {
       <button id="closeDetails">Close</button>
     `;
 
+    // AUTO SCROLL INTO VIEW
+    details.scrollIntoView({ behavior: "smooth", block: "start" });
+
     const ingList = document.getElementById("ingredients");
     const insList = document.getElementById("instructions");
     const select = document.getElementById("servingSelect");
@@ -120,7 +123,9 @@ document.addEventListener("DOMContentLoaded", () => {
     select.addEventListener("change", e => updateServings(recipe, e.target.value));
     document.getElementById("toggleIngredients").addEventListener("click", () => toggleIngredients(recipe, ingList));
     document.getElementById("toggleInstructions").addEventListener("click", () => toggleInstructions(recipe, insList));
-    document.getElementById("closeDetails").addEventListener("click", () => details.classList.add("hidden"));
+    document.getElementById("closeDetails").addEventListener("click", () =>
+      details.classList.add("hidden")
+    );
   }
 
   function updateServings(recipe, factor) {
@@ -128,7 +133,8 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("servingCount").textContent = newServings.toFixed(1);
 
     const ingList = document.getElementById("ingredients");
-    if (!engList.classList.contains("hidden")) {
+
+    if (!ingList.classList.contains("hidden")) {
       ingList.innerHTML = recipe.ingredients.map(i =>
         `<li>${(i.quantity * factor).toFixed(2)} ${i.unit} ${i.item}</li>`
       ).join("");
